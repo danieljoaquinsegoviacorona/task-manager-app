@@ -1,5 +1,5 @@
 import './App.css';
-import AddTask from './components/wrapping-components/NewTask';
+import NewTask from './components/wrapping-components/NewTask';
 import TaskTable from './components/wrapping-components/TaskTable';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       
       </header>
       <h1>Add new task:</h1>
-      <AddTask></AddTask>
+      <NewTask></NewTask>
       <h1>Tasks Table:</h1>
       <TaskTable></TaskTable>
     </div>
