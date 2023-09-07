@@ -3,7 +3,7 @@ import actions from "../redux-store/ReduxStore";
 import store from "../redux-store/ReduxStore";
 import { useState } from "react";
 
-const AddTask = ({ dispatch }) => {
+const NewTask = ({ dispatch }) => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [status, setStatus] = useState("new");
@@ -72,4 +72,4 @@ const mapDispatchToProps = (dispatch) => ({
   addTask: (task) => dispatch(actions.addTask(task)),
 });
 
-export default connect(null, mapDispatchToProps)(AddTask);
+export default connect(null, mapDispatchToProps)(NewTask);
